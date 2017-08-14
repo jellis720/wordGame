@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Word Game</title>
+  <link rel="stylesheet" href="/styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:900" rel="stylesheet">
+</head>
+<body>
+  <div class="title">
+    <h1>WHEELLESS FORTUNE</h1>
+    <h2>Take a guess...</h2>
+  </div>
+
+  <div class="container">
+    {{#letters}}
+      <div class="guessColumn">
+        <div class="letters">
+          {{.}}
+        </div>
+      </div>
+    {{/letters}}
+  </div>
+
+  <form class="letterForm" autocomplete="off" action="/guess" method="post">
+    <input type="text" name="pick" value="" maxlength="1" />
+    <button id="guess_button" type="submit" name="button">GO!</button>
+  </form>
+
+  <div class="tries">
+    {{#tries}}
+      <h2>{{.}} guesses left...</h2>
+    {{/tries}}
+  </div>
+
+  <div class="bad_guess">
+    <h2 id="badguess">You've already guessed the following</h2>
+    <ul>
+      {{#wrong}}
+        <li>{{.}}</li>
+      {{/wrong}}
+    </ul>
+  </div>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>YOU LOSE!</title>
+    <link rel="stylesheet" href="/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:900" rel="stylesheet">
+  </head>
+
+  <body>
+    <h1>WOMP WOMP</h1>
+    <h2>You ran out of attempts!</h2>
+
+    {{#word_pick}}
+    <h2>The word was: {{word_pick}}</h2>
+    {{/word_pick}}
+
+    <button type="button" name="button" onClick="window.location.href='/new_word';">Play again?</button>
+  </body>
+</html>

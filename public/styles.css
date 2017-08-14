@@ -1,0 +1,61 @@
+body{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: green;
+  font-family: 'Playfair Display', serif;
+}
+
+.guessColumn{
+  width: 50px;
+  height: 30px;
+  border: 2px solid gold;
+  display: inline-block;
+}
+
+h1{
+  color: gold
+}
+
+h2{
+  color: gold
+}
+
+input{
+  width: 30%;
+  height: 30px;
+  font-size: 20px;
+}
+
+.container{
+  margin-bottom: 25px;
+  color: gold;
+  align-items: center;
+}
+
+.letters{
+  height: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 0px;
+}
+
+button{
+  display: block;
+  width: 80px;
+  height: 60px;
+  font-size: 32px;
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  border: none;
+}
+
+p{
+  height: 50px;
+  width: 50px;
+}
